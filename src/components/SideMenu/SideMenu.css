@@ -1,0 +1,75 @@
+.sidemenu-outer {
+  left: 0;
+  position:absolute;
+  z-index: 999999;
+  background-color: var(--dark-bg-color);
+  height: 100vh;
+  max-width: 400px;
+  transition: max-width 0.3s ease-in-out;
+}
+
+.sidemenu-outer.collapsed {
+  max-width: 50px;
+}
+
+@media screen and (max-width: 482px) {
+  .sidemenu-outer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 483px) and (max-width: 1024px) {
+  .sidemenu-outer {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .sidemenu-outer {
+    width: 50%;
+  }
+}
+
+.sidemenu-header {
+  margin: 5%;
+  height: auto;
+  min-height: 32px;
+  display: grid;
+  position: relative;
+  transition: height 0.3s ease-in-out;
+}
+
+.sidemenu-header.collapsed {
+  margin: 5%;
+  height: 64px;
+  display: none;
+}
+
+.sidemenu-title {
+  margin-right: 10vw;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.sidemenu-close {
+  width: 32px;
+  height: 32px;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidemenu-close.collapsed {
+  width: 32px;
+  height: 32px;
+  left: 0.4em;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sidemenu-icon.collapsed {
+  margin-top: 10px;
+}
