@@ -1,8 +1,18 @@
 import React from "react";
-import "./Divider.css"
+import "./Divider.css";
 
-const Divider = ({size = 1}) => {
-  return <div className="divider" style={{ height: `${size}px`}}/>
+interface DividerType {
+  size?: Number;
+  padding?: Number;
 }
 
-export default Divider as typeof Divider;
+const Divider = ({ size = 0, padding = 0 }: DividerType) => {
+  return (
+    <div
+      className="divider"
+      style={{ height: `${size}px`, padding: `${padding}px` }}
+    />
+  );
+};
+
+export default Divider;

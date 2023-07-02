@@ -3,11 +3,15 @@ import Divider from "./Divider/Divider";
 import SideMenu from "./SideMenu/SideMenu";
 import SideMenuItem from "./SideMenuItem/SideMenuItem";
 import Checkbox from "./Checkbox/Checkbox";
+import TextItem from "./Text/TextItem";
+import Select from "./Select/Select";
 
-export  {
+export {
   SideMenu,
   SideMenuItem,
   Flex,
   Divider,
-  Checkbox
+  Checkbox,
+  TextItem,
+  Select
 };

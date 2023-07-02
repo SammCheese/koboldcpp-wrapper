@@ -1,11 +1,17 @@
-.checkbox-{
-  -webkit-appearance: none;
-  appearance: none;
-  width: 1.6em;
-  height: 1.6em;
-  border-radius: 0.15em;
-  margin-right: 0.5em;
-  border: 0.15em solid #007a7e;
-  outline: none;
+.checkbox-wrapper {
+  align-items: center;
   cursor: pointer;
+}
+
+.checkbox-icon {
+  position: relative;
+  top: 6px;
+}
+
+.checkbox-icon.checked {
+  color: #0dc9d0;
+}
+
+.checkbox-title {
+  margin-left: 0.5em;
 }

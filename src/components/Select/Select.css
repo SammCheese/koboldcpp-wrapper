@@ -1,0 +1,47 @@
+.select-item-container {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+}
+
+.select-icon {
+  position: relative;
+  right: 0;
+  margin-left: 40px;
+}
+
+.selected-text {
+  border: 2px solid white;
+  padding: 8px 16px;
+  background-color: var(--dark-bg-color);
+  border-radius: 3px;
+  width: 110px;
+  cursor: pointer;
+}
+
+.select-item {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+
+  background-color: var(--dark-bg-color);
+  border: 1px solid var(--dark-bg-main-color);
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.select-item-option {
+  width: 110px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-item-option:hover {
+  background-color: var(--dark-hover-color);
+}
+
+.select-item-option.selected {
+  background-color: var(--dark-highlight-color);
+}

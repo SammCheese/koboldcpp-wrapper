@@ -1,9 +1,6 @@
 .content-page {
-  outline-style: dotted;
-  outline-width: 5px;
-  outline-color: red;
   left: 50px;
-  position: relative;
+  position: absolute;
   width: calc(100vw - 50px);
   height: 100vh;
 }

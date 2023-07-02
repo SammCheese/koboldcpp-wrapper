@@ -31,45 +31,62 @@
 }
 
 .sidemenu-header {
-  margin: 5%;
-  height: auto;
+  height: 88px;
   min-height: 32px;
   display: grid;
   position: relative;
   transition: height 0.3s ease-in-out;
+  align-items: center;
 }
 
 .sidemenu-header.collapsed {
-  margin: 5%;
   height: 64px;
   display: none;
 }
 
 .sidemenu-title {
-  margin-right: 10vw;
+  margin-right: 5%;
+  margin-left: 3%;
   font-size: 1.5rem;
-  margin-left: 20px;
+  display: inline-block;
+  vertical-align: 20%;
+  transition: display 0.5s ease-in-out;
+  display: unset;
 }
 
-.sidemenu-close {
+.sidemenu-title.sidemenu-icon.collapsed {
+  display: none;
+  transition: display 0.5s ease-in-out;
+}
+
+.sidemenu-toggle {
   width: 32px;
   height: 32px;
-  right: 0;
+  right: 40px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  transition: left 0.3s ease-in-out;
 }
 
-.sidemenu-close.collapsed {
-  width: 32px;
-  height: 32px;
-  left: 0.4em;
-  margin-bottom: 10px;
+.sidemenu-header-flex {
+  left: 5%;
   position: relative;
 }
 
+.sidemenu-toggle.collapsed {
+  left: 0.35em;
+  bottom: 15%;
+  position: relative;
+}
+
+.sidemenu-icon {
+  left: 5%;
+}
+
 .sidemenu-icon.collapsed {
+  left: 0.05em;
+  position: relative;
+  margin-left: 15%;
   margin-top: 10px;
 }

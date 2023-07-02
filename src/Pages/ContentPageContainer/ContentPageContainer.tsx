@@ -1,16 +1,12 @@
 import React, { ReactNode } from "react";
-import "./ContentPageContainer.css"
+import "./ContentPageContainer.css";
 
 interface ContentPageType {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const ContentPageContainer = ({children}: ContentPageType) => {
-  return (
-    <div className="content-page">
-      {children}
-    </div>
-  )
-}
+const ContentPageContainer = ({ children }: ContentPageType) => {
+  return <div className="content-page">{children}</div>;
+};
 
-export default ContentPageContainer as typeof ContentPageContainer;
+export default ContentPageContainer;
